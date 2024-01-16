@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/0ee1f1785a.js" crossorigin="anonymous"></script>
+    <title>Graham Thompson portfolio</title>
+</head>
+<body>
+    <div id="hero" class="night-sky-container">
+        <span class="shooting-star" id="star-zero"></span>
+        <span class="shooting-star" id="star-one"></span>
+        <span class="shooting-star" id="star-two"></span>
+        <span class="shooting-star" id="star-three"></span>
+        <nav>
+            <ul>
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#projects">PROJECTS</a></li>
+                <li><a href="#education">EDUCATION</a></li>
+            </ul>
+        </nav>
+        <header>
+            <h1>Hi, my name is <span>Graham Thompson</span></h1>
+            <p><span>Determined</span> to do the best I can</p>
+            <p><span>Passionate</span> about programming</p> 
+            <p><span>Consistently</span> learning and growing</p>
+        </header>
+        <div class="sub-heading">
+            <p>Continue scrolling to learn more about me.</p>
+            <p id="arrow">&#8595;</p>
+        </div>
+    </div>
+    <main>
+        <div class="night-sky-container">
+            <section id="about" class="container">
+                <h2>About me</h2>
+                <div id="about-container">
+                    <div id="contact">
+                        <img src="images/self-portrait.jpg" alt="A photo of me.">
+                        <p>
+                            Contact me on:
+                            <a href="https://www.linkedin.com/in/graham-thompson-8699581a1" target="_blank">
+                                <i class="fa-brands fa-linkedin fa-2xl" style="color: #6FDBC7;"></i>
+                            </a>
+                            <a href="mailto:thompson_507@hotmail.com">
+                                <i class="fa-solid fa-envelope fa-2xl" style="color: #6FDBC7;"></i>
+                            </a>
+                        </p>
+                    </div>
+                    <article>
+                        <p>
+                            Hi, my name is Graham, I started my programming journey in 2022 by attending an Information 
+                            technology certificate 3 course at Tafe.
+                        </p>
+                        <br>
+                        <p>
+                            I love the opportunities to learn and grow as a person that arise from the challenges that programming 
+                            has provided me with. It has taught me to think, to be creative and to understand the general approach 
+                            I take to problem solving which always involves first understanding, what it is I do not yet 
+                            understand.
+                        </p>
+                        <br>
+                        <p>
+                            Prior to this I had been a mechanic for 16 years, having spent most of my career working on Aston 
+                            Martins among other brands such as Rolls Royce and Bentley.
+                        </p>
+                        <br>
+                        <p>
+                            In my spare time I enjoy reading, programming, going to the gym and playing video games.
+                            I also have a keen interest in exploring different parts of the world and have travelled around 
+                            southeast Asia, China, Hong Kong, and the east coast of Australia.
+                        </p>
+                    </article>
+                </div>
+                <div class="sub-heading">
+                    <p>How much have I learnt in 2 years? Let me show you.</p>
+                    <p id="arrow">&#8595;</p>
+                </div>
+            </section>
+        </div>
+        <div class="night-sky-container">
+            <section id="projects" class="container">
+                <h2>Projects</h2>
+                <div id="project-display">
+                    <div class="project-card">
+                        <h3>Inventory management application</h3>
+                        <div class="technologies">
+                            <ul>
+                                <li>C#</li>
+                                <li>Bootstrap</li>
+                                <li>ASP.NET core MVC</li>
+                                <li>Enitity framework core</li>
+                                <li>SQL server</li>
+                            </ul>
+                        </div>
+                        <div class="project-description">
+                            <p>
+                                Still in progress this is a full stack web application built for my mum to keep track of all the
+                                second-hand vintage items she buys and sells as her hobby.
+                            </p>
+                            <p>
+                                I gathered client requirements, designed, and built this project for the purpose of helping my 
+                                mum along with using it as a way to learn the .NET core frameworks I will be using in my upcoming 
+                                diploma course specialising in advanced programming at Tafe.
+                            </p>
+                            <p>
+                                This project already includes server side validation however, in the future I plan to implement 
+                                client side validation using Javascript to increase performance so a call to the server is not
+                                required each time a form is submitted. I also plan to implement various graphs into the dashboard
+                                component of the application, along with UX upgrades to the form inputs.
+                            </p>
+                        </div>
+                        <video controls playsinline>
+                            <source src="videos/Inventory-App.mp4" type="video/mp4">
+                            Not supported.
+                            A video showing a demonstration of my inventory application in operation.
+                        </video>
+                    </div>
+                    <div class="project-card">
+                        <h3>Cert IV employee payslip winforms application</h3>
+                        <div class="technologies">
+                            <ul>
+                                <li>C#</li>
+                                <li>.NET Winforms</li>
+                            </ul>
+                        </div>
+                        <div class="project-description">
+                            <p>
+                                A windows desktop application that can be used to create a payslip for an employee, it reads in 
+                                employee data and tax data from seperate .csv files, calculates and displays a summary of the 
+                                payslip and then saves the payslip data to a timestamped .csv file.
+                            </p>
+                            <p>
+                                This was my first project built using object oriented programming techniques, I created user 
+                                stories, use case and class diagrams during the design phase of the project. I also carried out
+                                reseach on the best way to overcome the task of working with .csv files which lead me to make
+                                comparisons on different libraries available through nuget package manager and finally implement
+                                one of those libraries into my design. 
+                            </p>
+                        </div>
+                        <video controls playsinline>
+                            <source src="videos/Weekly-PayCalculator.mp4" type="video/mp4">
+                            Not supported.
+                            A video showing a demonstration of my employee payslip application in operation.
+                        </video>
+                    </div>
+                    <div class="project-card">
+                        <h3>Cert III console login application</h3>
+                        <div class="technologies">
+                            <ul>
+                                <li>Python</li>
+                            </ul>
+                        </div>
+                        <div class="project-description">
+                            <p>
+                                This is the first project I completed, it was part of my Information technology certificate 3 at Tafe in 2022.
+                                It is a simple login program that reads from and writes to a .txt file which allows the user to login 
+                                using their user name and password, create an account with choices to create their own password or 
+                                have one generated for them, and view all of the created accounts.
+                            </p>
+                        </div>
+                        <video controls playsinline>
+                            <source src="videos/Python-Project.mp4" type="video/mp4">
+                            Not supported.
+                            A video showing a demonstration of my Python login application in operation.
+                        </video>
+                    </div>
+                </div>
+                <div class="sub-heading">
+                    <p>View all of my projects on github
+                        <a href="https://github.com/Graham-P-Thompson" target="_blank">
+                            <i class="fa-brands fa-github-square fa-2xl" style="color: #6FDBC7"></i>
+                        </a>
+                    </p>
+                    <p>or</p>
+                    <p>View my education below</p>
+                    <p id="arrow">&#8595;</p>
+                </div>
+            </section>
+        </div>
+        <div class="night-sky-container">
+            <section id="education" class="container">
+                <h2>Education</h2>
+                <div id="education-display">
+                    <div class="cert-card">
+                        <img class="certificate" src="images/JSA-JavaScript-Associate.jpg" alt="Javascript Associate programmer">
+                        <h3>Javascript Associate programmer</h3>
+                    </div>
+                    <div class="cert-card">
+                        <img class="certificate" src="images/JSE-JavaScript-Entry-Level.jpg" alt="Javascript Entry Level programmer">
+                        <h3>Javascript Entry level programmer</h3>
+                    </div>
+                    <div class="cert-card">
+                        <img class="certificate" src="images/PCEP-Python-Entry-Level.jpg" alt="Python entry level programmer">
+                        <h3>Python entry level programmer</h3>
+                    </div>
+                    <div class="tafe-course">
+                        <div>
+                            <img src="images/tafe-logo.png" alt="Tafe logo">
+                        </div>
+                        <div class="course-info">
+                            <h3>Tafe diploma information technology advanced programming</h3>
+                            <p>Feb 2024 - Jun 2024</p>
+                            <br>
+                            <p>
+                                COMING SOON
+                            </p>
+                        </div>
+                    </div>
+                    <div class="tafe-course">
+                        <div>
+                            <img src="images/tafe-logo.png" alt="Tafe logo">
+                        </div>
+                        <div class="course-info">
+                            <h3>Tafe certificate 4 information technology programming</h3>
+                            <p>Feb 2023 - Jun 2023</p>
+                            <br>
+                            <p>
+                                During this course I have gained practical skills in the following areas:
+                            </p>
+                            <br>
+                            <ul>
+                                <li>Object-oriented programming using the C# language and .NET core frameworks.</li>
+                                <li>Web development using HTML, CSS and JavaScript.</li>
+                                <li>SQL queries using Microsoft DBMS and SQL server, along with database design.</li>
+                                <li>Mobile application development using Node JS, React Native and Expo.</li>
+                            </ul>
+                            <br>
+                            <p>These skills were acquired through projects including:</p>
+                            <ul>
+                                <li>
+                                    Designing and implementing a Winforms pay slip application in C# which reads in 
+                                    employee and tax threshold data from a .csv file. Allows employees to enter their hours 
+                                    worked via a timesheet form and produces a pay slip based on their tax threshold and 
+                                    hourly rate.
+                                </li>
+                                <li>
+                                    Developed a restaurant order website in HTML/CSS/JavaScript which takes user inputs and 
+                                    calculates the best price based on various bundle pricing deals.
+                                </li>
+                                <li>
+                                    Designed and developed a database for a medical practice booking system in SQL Server, 
+                                    including entry and retrieval of patient and practitioner records.
+                                </li>
+                            </ul>               
+                        </div>
+                    </div>
+                    <div class="tafe-course">
+                        <div>
+                            <img src="images/tafe-logo.png" alt="Tafe logo">
+                        </div>
+                        <div class="course-info">
+                            <h3>Tafe certificate 3 information technology</h3>
+                            <p>Jul 2022 - Nov 2022</p>
+                            <br>
+                            <p>
+                                This course provided me with a solid foundation in all areas of Information technology covering 
+                                subjects such as:
+                            </p>
+                            <br>
+                            <ul>
+                                <li>Programming using the Python programming language.</li>
+                                <li>Web development using HTML and CSS.</li>
+                                <li>
+                                    Cyber security, Confidentiality, Integrity, Availability, types of cyber attacks, network 
+                                    vulnerabilities.
+                                </li>
+                                <li>Networking, Ip addressing, Routers, Switches, data redundancy.</li>
+                                <li>
+                                    Computer hardware/Software, Installing hardware components, Installing Microsoft windows, 
+                                    Operating systems.
+                                </li>
+                                <li>Virtual machines using Oracle Virtual Box.</li>
+                                <li>IT support, workplace skills, presentations, organizational structures.</li>
+                                <li>Cloud computing.</li>
+                            </ul>
+                            <br>
+                            <p>
+                                I gained practical skills in programming and web development by completing the following projects:
+                            </p>
+                            <br>
+                            <ul>
+                                <li>
+                                    A console login application that reads passwords and usernames from a .txt file and 
+                                    allows users to create their own usernames and passwords which then get written to the 
+                                    .txt file.
+                                </li>
+                                <li>
+                                    A simple cake shop website that I uploaded to a server using an FTP client.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div id="cert-modal">
+                    <span id="close">&times;</span>
+                    <img id="modal-image">
+                    <div id="caption"></div>
+                </div>
+                <div class="sub-heading">
+                    <p>Thank you for taking the time to view my porfolio, I look foward to hearing from you.</p>
+                </div>
+            </section>
+        </div>
+        <button id="top-button" title="Go to top">Top</button>
+    </main>
+    <footer>
+        <p>&copy Graham Thompson 2024.</p>
+        <p>
+            Linkedin: 
+            <a href="https://www.linkedin.com/in/graham-thompson-8699581a1" target="_blank">
+                <i class="fa-brands fa-linkedin fa-2xl" style="color: #6FDBC7;"></i>
+            </a> 
+            Email: 
+            <a href="mailto:thompson_507@hotmail.com">
+                <i class="fa-solid fa-envelope fa-2xl" style="color: #6FDBC7;"></i>
+            </a>
+        </p>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
