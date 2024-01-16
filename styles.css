@@ -465,13 +465,14 @@ h2 {
     outline: none;
     background-color: #6FDBC7;
     color: #000000;
+    text-decoration: none;
     cursor: pointer;
     padding: 10px 20px;
     border-radius: 10px;
     font-size: 1.2rem;
-  }
+}
   
-#top-button:hover {
+#top-button:focus, #top-button:hover {
 background-color: #5D6D7E;
 color: #ffffff;
 }
