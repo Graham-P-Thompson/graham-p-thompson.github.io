@@ -13,7 +13,7 @@
     setInterval(moveStar, 5300, star3);
 
     function moveStar(star) {
-        let xAxisFromLeft = getNextPosition(nightSkyContainer.clientWidth); // includes padding but not border or margin (displayed content)
+        let xAxisFromLeft = getNextPosition(nightSkyContainer.clientWidth);
         let yAxisFromTop = getNextPosition(nightSkyContainer.clientHeight);
         star.style.opacity = 1;
         star.style.top = yAxisFromTop + "px";
@@ -24,7 +24,7 @@
     function getNextPosition(max) {
         min = 0;
         max = max; 
-        return Math.floor(Math.random() * (max - min + 1) + min); // The maximum is inclusive and the minimum is inclusive
+        return Math.floor(Math.random() * (max - min + 1) + min);
     }
 })();
 

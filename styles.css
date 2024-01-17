@@ -60,22 +60,10 @@ body {
     background-color: #6FDBC7;
     box-shadow: 0 0 0 4px rgba(255, 255, 225, 0.1), 
                 0 0 0 8px rgba(255,255,255, 0.1), 
-                0 0 16px rgba(111, 219, 199); /* offset-x offset-y blur-radius spread-radius color */
+                0 0 16px rgba(111, 219, 199);
     opacity: 0;
     transition: all 1.5s, opacity 0.5s;
 }
-
-/* create the trailing light for the shooting star */
-/*
-.shooting-star::after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    width: 150px;
-    height: 1px;
-    background: linear-gradient(90deg, #fff, transparent);
-}
-*/
 
 /* Give the stars a starting position */
 #star-zero {
@@ -258,7 +246,7 @@ h2 {
     background-color: #000000;
     background-color: rgba(0,0,0, 0.5);
     border-radius: 5px;
-    box-shadow: 0 0 8px rgba(111, 219, 199); /* offset-x offset-y blur-radius spread-radius color */
+    box-shadow: 0 0 8px rgba(111, 219, 199);
 }
 
 @media screen and (min-width: 992px) {
@@ -343,7 +331,7 @@ h2 {
     max-width: 100%;
     height: auto;
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(111, 219, 199); /* offset-x offset-y blur-radius spread-radius color */
+    box-shadow: 0 0 10px rgba(111, 219, 199);
     cursor: pointer;
 }
 
@@ -471,10 +459,12 @@ h2 {
     border-radius: 10px;
     font-size: 1.2rem;
 }
-  
-#top-button:focus, #top-button:hover {
-background-color: #5D6D7E;
-color: #ffffff;
+
+@media (hover: hover) {
+    #top-button:hover {
+        background-color: #5D6D7E;
+        color: #ffffff;
+    }
 }
 
 footer {
@@ -483,9 +473,3 @@ footer {
     color: #ffffff;
     text-align: center;
 }
-
-/*
-  Grey color
-  #5D6D7E 
-  rgba(93, 109, 126, 0.5)
-*/
