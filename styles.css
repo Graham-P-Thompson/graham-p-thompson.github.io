@@ -460,7 +460,7 @@ h2 {
     font-size: 1.2rem;
 }
 
-@media (hover: hover) {
+@media screen and (min-width: 992px) {
     #top-button:hover {
         background-color: #5D6D7E;
         color: #ffffff;
