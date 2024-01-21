@@ -62,7 +62,17 @@ body {
                 0 0 0 8px rgba(255,255,255, 0.1), 
                 0 0 16px rgba(111, 219, 199);
     opacity: 0;
-    transition: all 1.5s, opacity 0.5s;
+    transition: top 1.5s, left 1.5s, rotate 0s, opacity 0.5s;
+}
+
+/* create the trailing light for the shooting star */
+.shooting-star::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 150px;
+    height: 1px;
+    background: linear-gradient(90deg, #6FDBC7, transparent);
 }
 
 /* Give the stars a starting position */

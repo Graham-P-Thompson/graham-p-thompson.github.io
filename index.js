@@ -15,6 +15,10 @@
     function moveStar(star) {
         let xAxisFromLeft = getNextPosition(nightSkyContainer.clientWidth);
         let yAxisFromTop = getNextPosition(nightSkyContainer.clientHeight);
+
+        let directionAngle = getRotation(star, xAxisFromLeft, yAxisFromTop)
+        star.style.rotate = directionAngle + "deg";
+
         star.style.opacity = 1;
         star.style.top = yAxisFromTop + "px";
         star.style.left = xAxisFromLeft + "px";
@@ -25,6 +29,22 @@
         min = 0;
         max = max; 
         return Math.floor(Math.random() * (max - min + 1) + min);
+    }
+
+    function getRotation(star, newPositionX, newPositionY) {
+      let pi = Math.PI;
+      let starValues = window.getComputedStyle(star);
+      let initialX = parseInt(starValues.getPropertyValue("left"), 10);
+      let initialY = parseInt(starValues.getPropertyValue("top"), 10);
+      let angleInRadians = Math.atan((initialY - newPositionY) / (initialX - newPositionX));
+      let degree = angleInRadians * (180/pi);
+
+      // 1st and 4th quadrants are 180deg off.
+      if ((newPositionX >= initialX && newPositionY >= initialY) || (newPositionX >= initialX && newPositionY <= initialY)) {
+        return degree + 180
+      } else {
+        return degree;
+      }
     }
 })();
 
